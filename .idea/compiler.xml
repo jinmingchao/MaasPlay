@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mcloud-project" />
+        <module name="mcloud-autoops" />
+        <module name="mcloud-auth" />
+        <module name="mcloud-device" />
+        <module name="mcloud-area" />
+        <module name="mcloud-cbinfo" />
+        <module name="mcloud-statistics" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cronjob" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
