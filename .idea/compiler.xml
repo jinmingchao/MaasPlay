@@ -6,17 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mcloud-project" />
-        <module name="mcloud-autoops" />
-        <module name="mcloud-auth" />
-        <module name="mcloud-device" />
         <module name="mcloud-area" />
-        <module name="mcloud-cbinfo" />
-        <module name="mcloud-statistics" />
+        <module name="mcloud-device" />
+        <module name="mcloud-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="1.5" />
       <module name="cronjob" target="1.5" />
+      <module name="mcloud-auth" target="1.5" />
+      <module name="mcloud-autoops" target="1.5" />
+      <module name="mcloud-cbinfo" target="1.5" />
+      <module name="mcloud-project" target="1.5" />
+      <module name="mcloud-statistics" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

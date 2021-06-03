@@ -4,6 +4,11 @@ server:
 spring:
   cloud:
     nacos:
+      config:
+        server-addr: 192.168.182.138:8848
+        file-extension: yml
+        namespace: 59d3ac1f-4024-4212-8ce1-f921b9e41bee     #dev
+        group:  jmc
       discovery:
         server-addr: 192.168.182.138:8848
   application:
