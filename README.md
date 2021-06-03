@@ -1,2 +1,2 @@
 # MaasPlay
-A try of newest Spring Cloud components by MingChao Jin
+A try out of newest Spring Cloud components by MingChao Jin
