@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mcloud-autoops/mcloud-autoops.iml" filepath="$PROJECT_DIR$/mcloud-autoops/mcloud-autoops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-executor-samples/xxl-job-executor-sample-frameless/xxl-job-executor-sample-frameless.iml" filepath="$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-executor-samples/xxl-job-executor-sample-frameless/xxl-job-executor-sample-frameless.iml" />
+    </modules>
+  </component>
+</project>

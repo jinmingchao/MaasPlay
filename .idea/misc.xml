@@ -6,14 +6,20 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-executor-samples/xxl-job-executor-sample-springboot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-core/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-executor-samples/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-autoops/mcloud-cronjob/xxl-job-executor-samples/xxl-job-executor-sample-frameless/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-autoops/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-cbinfo/pom.xml" />
+        <option value="$PROJECT_DIR$/mcloud-cronjob/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-project/pom.xml" />
         <option value="$PROJECT_DIR$/mcloud-statistics/pom.xml" />
       </set>

@@ -1,19 +1,18 @@
 package com.chinaunicom.torn.mcloud.service;
 
-import com.chinaunicom.torn.mcloud.entity.CloudbootAreaEntity;
-import com.chinaunicom.torn.mcloud.message.BatchIPMessage;
+import com.chinaunicom.torn.mcloud.domain.CloudbootArea;
 
 import java.util.List;
 
 public interface AreaZoneService {
 
-    /**
-     * @Description: TODO
-     * @Param []
-     * @Return java.util.List<com.chinaunicom.torn.mcloud.enetity.CloudbootAreaEntity>
-     * @Throw
-     * @Author MingChao Jin
-     * @Date 2021/6/3 14:09
-     */
-    List<CloudbootAreaEntity> findAllNetWorkLst();
+    boolean createCloudArea(CloudbootArea cloud);
+
+    List<CloudbootArea> fetchAllCloud();
+
+    boolean loginArea(CloudbootArea cloudbootArea);
+
+    boolean updateCloudArea(CloudbootArea area);
+
+    boolean deleteCloudArea(CloudbootArea area);
 }

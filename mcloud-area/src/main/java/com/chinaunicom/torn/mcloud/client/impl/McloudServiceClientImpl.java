@@ -1,7 +1,7 @@
 package com.chinaunicom.torn.mcloud.client.impl;
 
 import com.chinaunicom.torn.mcloud.client.McloudServiceClient;
-import com.chinaunicom.torn.mcloud.entity.CloudbootAreaEntity;
+import com.chinaunicom.torn.mcloud.domain.CloudbootArea;
 
 import java.util.List;
 
@@ -11,7 +11,10 @@ import java.util.List;
  * @Description: TODO
  */
 public class McloudServiceClientImpl implements McloudServiceClient {
-    public List<CloudbootAreaEntity> findAllNetWorkLst() {
+
+
+    @Override
+    public String AuthService_1() {
         return null;
     }
 }

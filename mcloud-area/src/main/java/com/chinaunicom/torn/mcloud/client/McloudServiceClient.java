@@ -1,6 +1,7 @@
 package com.chinaunicom.torn.mcloud.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @Author MingChao Jin
@@ -10,8 +11,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 @FeignClient(value = "mcloud")
 public interface McloudServiceClient {
 
-//    @GetMapping("/areaController_1")
-//    public String AuthService_1();
+    @GetMapping("/areaController_1")
+    public String AuthService_1();
 
 //    @GetMapping("/networklist")
 //    List<CloudbootAreaEntity> findAllNetWorkLst();

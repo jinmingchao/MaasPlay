@@ -1,0 +1,20 @@
+server:
+    port: 18082
+
+spring:
+    application:
+        name: area
+        cloud:
+            nacos:
+                password: jmc
+                username: cmj
+                server-addr: 192.168.182.138:8848
+                discovery:
+                    server-addr: 192.168.182.138:8848
+                config:
+                    server-addr: 192.168.182.138:8848
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/mcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+        username: root
+        password: root

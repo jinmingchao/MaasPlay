@@ -2,23 +2,44 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mcloud-area" />
         <module name="mcloud-device" />
-        <module name="mcloud-common" />
+        <module name="mcloud-autoops" />
+        <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-frameless" />
+        <module name="mcloud-area" />
+        <module name="xxl-job-core" />
+        <module name="xxl-job-executor-samples" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common" target="1.5" />
       <module name="cronjob" target="1.5" />
       <module name="mcloud-auth" target="1.5" />
-      <module name="mcloud-autoops" target="1.5" />
+      <module name="mcloud-autoops" target="1.8" />
       <module name="mcloud-cbinfo" target="1.5" />
       <module name="mcloud-project" target="1.5" />
       <module name="mcloud-statistics" target="1.5" />
+      <module name="xxl-job-executor-sample-frameless" target="1.8" />
+      <module name="xxl-job-executor-sample-springboot" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mcloud-area" options="-parameters" />
+      <module name="mcloud-autoops" options="-parameters" />
+      <module name="mcloud-common" options="-parameters" />
+      <module name="mcloud-cronjob" options="" />
+      <module name="mcloud-device" options="-parameters" />
+      <module name="xxl-job-admin" options="-parameters" />
+      <module name="xxl-job-core" options="-parameters" />
+      <module name="xxl-job-executor-sample-frameless" options="" />
+      <module name="xxl-job-executor-sample-springboot" options="" />
+      <module name="xxl-job-executor-samples" options="-parameters" />
+    </option>
   </component>
 </project>

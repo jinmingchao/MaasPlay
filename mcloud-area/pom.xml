@@ -10,63 +10,169 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mcloud-area</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
+        <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <spring-cloud-starter-openfeign.version>2.2.6.RELEASE</spring-cloud-starter-openfeign.version>
+    </properties>
     <dependencies>
+        <!--Spring Cloud Hoxton.SR5 相关依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-commons</artifactId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <!-- 引入 spring-cloud-alibaba 2.1.0 依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+            <version>${spring-cloud-alibaba.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- spring boot 2.3.0.RELEASE 相关依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>2.3.7.RELEASE</version>
-            <scope>compile</scope>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>${spring-boot.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.68</version>
+        </dependency>
+        <!-- nacos 注册中心 依赖-->
+        <!--            <dependency>-->
+        <!--                <groupId>com.alibaba.cloud</groupId>-->
+        <!--                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
+        <!--            </dependency>-->
+        <!--  nacos-config 配置中心依赖&dash -->
+        <!--            <dependency>-->
+        <!--                <groupId>com.alibaba.cloud</groupId>-->
+        <!--                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+        <!--            </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-gateway</artifactId>-->
+<!--        </dependency>-->
+        <!-- openfeign（所有调用） 包含 ribbon -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>${spring-cloud-starter-openfeign.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>com.unicom</groupId>
+            <artifactId>mcloud-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--            <dependency>-->
+        <!--                <groupId>com.h2database</groupId>-->
+        <!--                <artifactId>h2</artifactId>-->
+        <!--                <scope>runtime</scope>-->
+        <!--            </dependency>-->
     </dependencies>
+    <!--    <dependencies>-->
+    <!--        <dependency>-->
+    <!--            <groupId>org.springframework.cloud</groupId>-->
+    <!--            <artifactId>spring-cloud-dependencies</artifactId>-->
+    <!--            <version>${spring-cloud.version}</version>-->
+    <!--        </dependency>-->
+    <!--        <dependency>-->
+    <!--            <groupId>com.alibaba.cloud</groupId>-->
+    <!--            <artifactId>spring-cloud-alibaba-dependencies</artifactId>-->
+    <!--            <version>${spring-cloud-alibaba.version}</version>-->
+    <!--        </dependency>-->
 
-    <dependencyManagement>
-        <dependencies>
+    <!--        <dependency>-->
+    <!--            <groupId>org.springframework.boot</groupId>-->
+    <!--            <artifactId>spring-boot-starter-web</artifactId>-->
+    <!--        </dependency>-->
 
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring.cloud.version}</version>
-            </dependency>
+    <!--        <dependency>-->
+    <!--            <groupId>org.springframework.boot</groupId>-->
+    <!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+    <!--        </dependency>-->
 
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring.cloud.alibaba.version}</version>
-            </dependency>
+    <!--        <dependency>-->
+    <!--            <groupId>com.alibaba.cloud</groupId>-->
+    <!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
+    <!--            <version>2.2.1.RELEASE</version>-->
+    <!--        </dependency>-->
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-web</artifactId>
-            </dependency>
+    <!--        <dependency>-->
+    <!--            <groupId>com.alibaba.cloud</groupId>-->
+    <!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
+    <!--        </dependency>-->
+    <!--        <dependency>-->
+    <!--            <groupId>io.springfox</groupId>-->
+    <!--            <artifactId>springfox-swagger2</artifactId>-->
+    <!--            <version>2.7.0</version>-->
+    <!--        </dependency>-->
+    <!--        <dependency>-->
+    <!--            <groupId>org.springframework.cloud</groupId>-->
+    <!--            <artifactId>spring-cloud-starter-openfeign</artifactId>-->
+    <!--            <version>2.2.6.RELEASE</version>-->
+    <!--        </dependency>-->
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-actuator</artifactId>
-            </dependency>
+    <!--        <dependency>-->
+    <!--            <groupId>org.projectlombok</groupId>-->
+    <!--            <artifactId>lombok</artifactId>-->
+    <!--            <version>1.18.12</version>-->
+    <!--        </dependency>-->
 
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-                <version>2.2.1.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            </dependency>
-            <dependency>
-                <artifactId>mcloud-common</artifactId>
-                <groupId>com.unicom</groupId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-
-        </dependencies>
-    </dependencyManagement>
+    <!--        <dependency>-->
+    <!--            <groupId>com.baomidou</groupId>-->
+    <!--            <artifactId>mybatis-plus-boot-starter</artifactId>-->
+    <!--            <version>3.3.2</version>-->
+    <!--        </dependency>-->
+    <!--    </dependencies>-->
 </project>

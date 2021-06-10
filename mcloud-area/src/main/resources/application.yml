@@ -1,18 +1,9 @@
 server:
-  port: 18082
+    port: 18082
 
 spring:
-  cloud:
-    nacos:
-      config:
-        server-addr: 192.168.182.138:8848
-        file-extension: yml
-        namespace: 59d3ac1f-4024-4212-8ce1-f921b9e41bee     #dev
-        group:  jmc
-      discovery:
-        server-addr: 192.168.182.138:8848
-  application:
-    name: area
-
-
-
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/mcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+        username: root
+        password: root
