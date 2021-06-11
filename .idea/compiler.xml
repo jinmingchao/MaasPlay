@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mcloud" target="1.8" />
+      <module name="mcloud-area" target="8" />
+      <module name="mcloud-common" target="1.8" />
+      <module name="mcloud-cronjob" target="8" />
+      <module name="mcloud-device" target="1.8" />
+      <module name="xxl-job-admin" target="1.8" />
+      <module name="xxl-job-core" target="1.8" />
+      <module name="xxl-job-executor-sample-springboot" target="1.8" />
+      <module name="xxl-job-executor-samples" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

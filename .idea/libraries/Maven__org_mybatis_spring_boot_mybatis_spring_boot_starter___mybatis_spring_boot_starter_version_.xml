@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatis-spring-boot-starter.version}">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-starter/${mybatis-spring-boot-starter.version}/mybatis-spring-boot-starter-${mybatis-spring-boot-starter.version}.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-starter/${mybatis-spring-boot-starter.version}/mybatis-spring-boot-starter-${mybatis-spring-boot-starter.version}-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-starter/${mybatis-spring-boot-starter.version}/mybatis-spring-boot-starter-${mybatis-spring-boot-starter.version}-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
